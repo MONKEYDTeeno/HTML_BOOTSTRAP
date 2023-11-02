@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <title>Calculadora Promedio</title>
+</head>
+<body>
+    <h1>Calculadora de Promedio - Tecnología web</h1>
+    <form id="gradecalculator">
+        <label for="studentName">Nombre del estudiante:</label>
+        <input type="text" id="studentName" required><br><br>
+
+        <label for="subject">Asignatura:</label>
+        <input type="text" id="subject" required><br><br>
+    <h2>Notas de Unidad</h2>
+    <table>
+        <tr>
+            <th>Unidad</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Ponderación</th>
+        </tr>
+        <tr>
+            <td>Unidad 1 (33%)</td>
+            <td><input type="number" id="Nota1_Unidad1" step="0.1" required></td>
+            <td><input type="number" id="Nota2_Unidad1" step="0.1" required></td>
+            <td id="Ponderacion_Unidad1"></td>
+        </tr>
+        <tr>
+            <td>Unidad 2 (33%)</td>
+            <td><input type="number" id="Nota1_Unidad2" step="0.1" required></td>
+            <td><input type="number" id="Nota2_Unidad2" step="0.1" required></td>
+            <td id="Ponderacion_Unidad2"></td>
+        </tr>
+        <tr>
+            <td>Unidad 3 (33%)</td>
+            <td><input type="number" id="Nota1_Unidad3" step="0.1" required></td>
+            <td><input type="number" id="Nota2_Unidad3" step="0.1" required></td>
+            <td id="Ponderacion_Unidad3"></td>
+        </tr>
+    </table>
+    <button type="button" onclick="CalculatorPromedio()">Calcular Promedio</button>
+    </form>
+
+    <div class="pass-msg" id="passMessage"></div>
+    <a href="respuesta.html"></a>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+
